@@ -1,0 +1,58 @@
+/* common */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* header */
+.header {
+}
+
+.nav {
+}
+
+.logo__link {
+}
+
+.logo {
+}
+
+.nav__list {
+}
+
+.nav__list--item {
+}
+
+.nav__list--link {
+}
+
+.language__list {
+}
+
+.language__list--item {
+}
+
+.language__list--link {
+}
+
+/*  ------------------------------------------- Section HERO -----------------------------------*/
+
+.hero {
+}
+
+.nike {
+  width: 1440px;
+  height: 600px;
+  background-image: url(./images/bcg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
