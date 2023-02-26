@@ -1,3 +1,50 @@
+:root {
+  --text-color: #ffffff;
+  --unActive-color: #c7c7c7;
+  --accent-color: #8e32c6;
+  --background-color: #012d63;
+  --background: #dcdcdc;
+}
+
+/* reset */
+body {
+  font-family: Roboto, sans-serif, Raleway;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+
+  transition: opacity 0.3;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* common */
 
 .visually-hidden {
@@ -15,44 +62,195 @@
 }
 /* header */
 .header {
+  margin-right: 165px;
+  margin-left: 165px;
+  border-bottom: 1px solid #000000;
+}
+
+.header-container {
+  display: flex;
 }
 
 .nav {
+  display: flex;
 }
 
 .logo__link {
+  display: block;
+  margin-top: 35px;
+  margin-right: 150px;
 }
 
 .logo {
+  width: 100px;
+  height: 60px;
 }
 
 .nav__list {
+  display: flex;
+  align-items: center;
+
+  margin-right: 75px;
 }
 
-.nav__list--item {
+.nav__list--item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .nav__list--link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #c7c7c7;
 }
 
 .language__list {
+  display: flex;
+  align-items: center;
 }
 
-.language__list--item {
+.language__list--item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .language__list--link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #c7c7c7;
+}
+
+.active__link {
+  color: #ffffff;
 }
 
 /*  ------------------------------------------- Section HERO -----------------------------------*/
 
 .hero {
+  height: 960px;
+  position: relative;
+
+  background-image: url(./images/hero/hero-back-opt.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__container {
+  margin-left: 155px;
+  margin-right: 645px;
+}
+
+.hero__logo {
+  width: 160px;
+  height: 120px;
+}
+
+.underlogo {
+  width: 178px;
+  height: 86px;
+
+  margin-top: -25px;
+  margin-left: 30px;
+
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+
+  color: #ffffff;
+}
+
+.hero__heading {
+  width: 640px;
+
+  margin-top: -40px;
+
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 144px;
+  line-height: 192px;
+
+  color: #ffffff;
+}
+
+.hero__underHeading {
+  width: 540px;
+
+  margin-top: -40px;
+
+  margin-bottom: 12px;
+
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 96px;
+
+  color: #ffffff;
+}
+
+.hero__text {
+  width: 508px;
+
+  margin-bottom: 40px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 21px;
+
+  color: #ffffff;
+}
+
+.hero__button {
+  display: block;
+
+  width: 254px;
+  height: 67px;
+
+  text-align: center;
+
+  border-radius: 10px;
+  background-color: var(--accent-color);
+}
+
+.boots {
+  position: absolute;
+  left: 441px;
+  top: 200px;
+}
+
+.section {
+  background-image: url(./images/adventure/bcg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.img-list {
+  display: flex;
+  align-items: center;
 }
 
 .nike {
   width: 1440px;
   height: 600px;
+
   background-image: url(./images/bcg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.email--input {
+  padding-left: 5px;
 }
