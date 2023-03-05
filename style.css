@@ -62,6 +62,10 @@ img {
 }
 /* header */
 .header {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; */
   margin-right: 165px;
   margin-left: 165px;
   border-bottom: 1px solid #000000;
@@ -133,7 +137,7 @@ img {
 /*  ------------------------------------------- Section HERO -----------------------------------*/
 
 .hero {
-  height: 960px;
+  height: 950px;
   position: relative;
 
   background-image: url(./images/hero/hero-back-opt.jpg);
@@ -213,44 +217,173 @@ img {
 }
 
 .hero__button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 254px;
   height: 67px;
-
-  text-align: center;
 
   border-radius: 10px;
   background-color: var(--accent-color);
 }
 
+.hero__button--text {
+  width: 132px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #ffffff;
+}
 .boots {
   position: absolute;
   left: 441px;
   top: 200px;
 }
-
-.section {
+/* ----------------------------------------- section-advances ------------------------------------*/
+.section-advances {
   background-image: url(./images/adventure/bcg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 .img-list {
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  margin-left: 165px;
+  margin-right: 140px;
 }
 
+.imgg {
+  width: 300px;
+  height: 470px;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 100px;
+}
+
+/*  section-nike*/
 .nike {
-  width: 1440px;
-  height: 600px;
+  height: 665px;
+
+  padding-bottom: 72px;
+  padding-top: 45px;
 
   background-image: url(./images/bcg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.nike-box {
+  margin-left: 160px;
+  margin-right: 450px;
+
+  margin-bottom: 80px;
+
+  position: relative;
+}
+
+.main-img {
+  margin-bottom: 40px;
+}
+
+.first-img {
+  position: absolute;
+  left: 380px;
+  top: 100px;
+}
+
+.eclipse2 {
+  position: absolute;
+  left: 250px;
+  top: 220px;
+}
+
+.eclipse3 {
+  position: absolute;
+  left: 454px;
+  top: 193px;
+}
+
+.eclipse4 {
+  position: absolute;
+  left: 715px;
+  top: 73px;
+}
+
+.eclipse5 {
+  position: absolute;
+
+  left: 612px;
+  top: 215px;
+}
+
+.broom {
+  position: absolute;
+  left: 727px;
+  top: 57px;
+}
+
+.nike-text {
+  position: absolute;
+  width: 215px;
+  height: 40px;
+  left: 920px;
+  top: 17px;
+
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 37px;
+
+  color: #ffffff;
+}
+
+.material-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 60px;
+
+  width: 715px;
+  height: 85px;
+
+  -webkit-box-shadow: -2px 10px 36px -6px rgba(142, 50, 198, 0.6),
+    -2px 13px 36px -6px rgba(214, 0, 192, 0.6);
+  -moz-box-shadow: -2px 10px 36px -6px rgba(142, 50, 198, 0.6),
+    -2px 13px 36px -6px rgba(214, 0, 192, 0.6);
+  box-shadow: -2px 10px 36px -6px rgba(142, 50, 198, 0.6),
+    -2px 13px 36px -6px rgba(214, 0, 192, 0.6);
+
+  background: linear-gradient(91.33deg, #8e32c6 15.44%, #d600c0 69.67%);
+  border-radius: 15px;
+}
+
+.material--list__item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+
+  color: #ffffff;
+}
+
+.material--list__item:not(:last-child) {
+  margin-right: 20px;
+}
 .email--input {
   padding-left: 5px;
 }
