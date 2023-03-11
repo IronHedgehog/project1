@@ -277,3 +277,79 @@ ol {
   border-top-left-radius: 45px;
   border-bottom-right-radius: 45px;
 }
+
+section {
+  position: relative;
+
+  background-image: url(./images/Rectangle1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blur {
+  background: linear-gradient(
+    90deg,
+    #36526a 5.74%,
+    rgba(55, 107, 151, 0) 93.38%
+  );
+  padding-top: 25px;
+  padding-bottom: 45px;
+}
+
+.container {
+  background-color: brown;
+  display: flex;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.avatar {
+  position: absolute;
+
+  left: 1257px;
+  top: 100px;
+}
+
+.logo {
+  width: 260px;
+
+  height: 100px;
+
+  margin-bottom: 150px;
+}
+
+.hero-text {
+  width: 300px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+
+  margin-bottom: 10px;
+
+  color: black;
+}
+
+.img1 {
+  width: 150px;
+  height: 40px;
+
+  margin-bottom: 10px;
+}
+
+.hero-text2 {
+  width: 376px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+
+  margin-bottom: 40px;
+
+  /* color: #ffffff; */
+}
