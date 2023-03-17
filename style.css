@@ -394,6 +394,30 @@ img {
 }
 /*  */
 /* Estilo iOS */
+.switch-lang {
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+
+.langUA {
+  margin-right: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.langEN {
+  margin-left: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+}
+
 .switch__container {
   margin: 30px auto;
   width: 120px;
